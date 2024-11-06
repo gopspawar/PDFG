@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #444;
+  background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+  background: #4CAF50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+/* Navigation */
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+/* Calendar and Clock Section */
+.calendar-clock {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox for calendar and clock */
+.calendar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e3a47;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.clock {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #1c2b36;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 767px) {
+  .calendar-clock {
+    flex-direction: column; /* Stack calendar and clock vertically */
+    margin: 1rem; /* Adjust margin for mobile */
+  }
+
+  .calendar, .clock {
+    flex: none;
+    width: 100%; /* Make both full width on mobile */
+    margin-bottom: 1rem; /* Add spacing between calendar and clock */
+  }
+
+  .clock {
+    font-size: 1.5rem; /* Reduce clock font size for mobile */
+  }
+}
+.card, .routine-block {
+  background: #fafafa;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.5;
+}
+#google-drive {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+#google-drive .drive-link {
+  color: #4CAF50;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#google-drive .drive-link:hover {
+  text-decoration: underline;
+}
+
+#daily-affirmations, #inspirational-quotes {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#daily-affirmations .affirmation-card, 
+#inspirational-quotes .quote-card {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #4CAF50;
+  font-style: italic;
+}
+
+#daily-affirmations .affirmation-text, 
+#inspirational-quotes .quote-text {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#daily-affirmations h2, #inspirational-quotes h2 {
+  color: #4CAF50;
+}
+
+#daily-affirmations p, #inspirational-quotes p {
+  font-size: 1.1rem;
+  color: #4CAF50;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  /* For tablets and above, display cards side-by-side */
+  .card, .routine-block {
+    display: inline-block;
+    width: 45%;
+    margin: 10px 2%;
+    vertical-align: top;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile-friendly adjustments */
+  header {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  /* Stack navigation links vertically */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+    padding: 8px 15px;
+    width: 100%;
+    text-align: center;
+    background: #388E3C;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 15px;
+  }
+  
+
+  .card, .routine-block {
+    width: 100%; /* Full-width on mobile */
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p, ul li {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
